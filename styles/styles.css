@@ -30,12 +30,12 @@ body {
     align-items: center;
 }
 
-nav img {
+.nav-container img {
     width: 150px;
 }
 
 .nav-links {
-    flex: 1;
+    /* flex: 1; */
     text-align: right;
 }
 
@@ -99,12 +99,12 @@ nav img {
     background: transparent;
     position: relative;
     cursor: pointer;
+    transition: 1s;
 }
 
 .hero-btn:hover {
     border: 1px solid #f44;
     background: #f44336;
-    transition: 1s;
     border-radius: 5px;
 }
 
@@ -186,6 +186,8 @@ nav .fa {
 .course-col {
     /* The CSS property flex-basis is used in flexbox layouts to specify the initial size of a flex item along the main axis before any remaining space is distributed among the items.
     For example, if the flex container has a width of 500 pixels, the flex item with flex-basis: 31% would have an initial width of 155 pixels (31% of 500 pixels). */
+
+    /* Availble space er moddhe sobai 31% kore nibe */
     flex-basis: 31%;
     background-color: #fff3f3;
     border-radius: 10px;
