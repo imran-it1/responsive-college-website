@@ -10,6 +10,7 @@ body {
 
 .header {
     min-height: 100vh;
+    /* Width 100% a kicu issue hoy jokhon margin border add kora hoy, scroll bar chole ase */
     width: auto;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('../images/banner.png');
 
@@ -107,6 +108,11 @@ nav img {
     border-radius: 5px;
 }
 
+nav .fa {
+    display: none;
+}
+
+
 
 /* Small Device */
 
@@ -125,8 +131,21 @@ nav img {
         height: 100vh;
         width: 200px;
         top: 0;
-        right: 0;
+        right: -200px;
         text-align: left;
         z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 1.375rem;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
     }
 }
